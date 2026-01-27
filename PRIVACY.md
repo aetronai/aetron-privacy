@@ -1,8 +1,8 @@
 # Privacy Policy for AETRON Wallet
 
-**Last Updated: January 2025**
+**Last Updated: January 2026**
 
-**Effective Date: January 2025**
+**Effective Date: January 2026**
 
 ## Overview
 
