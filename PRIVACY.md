@@ -6,7 +6,7 @@
 
 ## Overview
 
-AETRON Wallet is a non-custodial mobile application for the AETRON blockchain, available on iOS and Android. We are committed to protecting your privacy and being transparent about our data practices.
+AETRON Wallet is a non-custodial application for the AETRON blockchain, available on iOS, Android, macOS, Windows. We are committed to protecting your privacy and being transparent about our data practices.
 
 ## Data Collection
 
