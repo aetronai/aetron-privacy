@@ -1,24 +1,24 @@
 # Privacy Policy for AETRON Wallet
 
-**Last Updated: January 2026**
+**Last Updated: November 2026**
 
-**Effective Date: January 2026**
+**Effective Date: November 2026**
 
 ## Overview
 
-AETRON Wallet is a non-custodial application for the AETRON blockchain, available on iOS, Android, macOS, Windows. We are committed to protecting your privacy and being transparent about our data practices.
+AETRON Wallet is a non-custodial application for the AETRON blockchain, available on iOS, Android, macOS, Windows, Chrome and Firefox Extension. We are committed to protecting your privacy and being transparent about our data practices.
 
 ## Data Collection
 
 **We do NOT collect:**
 
-- Personal information or identifiers
-- Wallet addresses or balances
-- Transaction history
-- Private keys or seed phrases
+- Personal information or identifiers (name, email, phone number)
+- Private keys or recovery phrases
 - Location data
 - Analytics or telemetry data
 - Usage statistics
+- Crash reports
+- Advertising identifiers
 
 **We do NOT:**
 
@@ -42,14 +42,17 @@ All data is stored **locally** on your device:
 
 ## Network Communications
 
-**No data is transmitted to our servers** because we do not operate any servers.
+The app connects to the following services. Those marked AETRON are run by us.
 
-The app connects only to:
+- **AETRON blockchain nodes** (AETRON: `entrypoint-mainnet.aetron.ai`, `entrypoint-test.aetron.ai`), or a node you add yourself in Settings — to read balances and staking data and to submit the transactions you sign
+- **AETRON Explorer API** (AETRON: `api-explorer.aetron.io`) — transaction history, miner reward history, network statistics and the AET price
+- **AETRON Connect relay** (AETRON: `connect.aetron.ai`) — only when you connect the wallet to a site or app. Messages between the wallet and the site are end-to-end encrypted: the relay forwards them, cannot read them, keeps each message only until it expires (at most one hour) and does not log message contents
+- **Desktop only: GitHub Releases** — to check for and download updates of the macOS and Windows apps. GitHub's privacy policy applies to these requests
 
-- **AETRON blockchain nodes** — to query balances, submit transactions, and interact with the network (using public WebSocket endpoints)
-- **AETRON block explorer API** — to retrieve transaction history and balance information as an additional data source alongside blockchain nodes
+These requests contain public blockchain data (wallet addresses, signed transactions, transaction hashes) and nothing that identifies you personally. Like any internet service, these servers see the IP address a request comes from. We do not use IP addresses to identify or track you.
 
-These connections contain only public blockchain data (wallet addresses, transaction hashes) necessary for wallet functionality. No personal information is transmitted.
+A site or app you connect through AETRON Connect receives the account address you choose to share and the signatures and transactions you approve. Its own privacy policy applies to what it does with them.
+
 
 ## Third-Party Services
 
@@ -62,11 +65,11 @@ We do not use any third-party:
 
 ## Device Permissions
 
-| Permission | Why We Need It                        | Required |
-| ---------- | ------------------------------------- | -------- |
-| Camera     | Scan QR codes for addresses           | Optional |
-| Biometric  | Quick unlock with Face ID/fingerprint | Optional |
-| Internet   | Connect to blockchain network         | Required |
+| Permission | Why We Need It | Required |
+| --- | --- | --- |
+| Camera | Scan QR codes for addresses and AETRON Connect | Optional |
+| Biometric | Quick unlock and confirmation with Face ID, Touch ID or fingerprint | Optional |
+| Internet | Connect to the blockchain network | Required |
 
 You can deny optional permissions and still use the app with limited functionality.
 
@@ -76,7 +79,7 @@ You can deny optional permissions and still use the app with limited functionali
 - Keys are stored in the device's secure enclave/keystore when available
 - Keys never leave your device unencrypted
 - No remote access to your wallet data
-- Password required for sensitive operations
+- The wallet opens only with your password or biometric confirmation, and you can require that confirmation for every transaction in Settings
 
 ## Your Responsibilities
 
@@ -94,11 +97,12 @@ This application is not intended for users under 18 years of age. We do not know
 
 ## Data Deletion
 
-Since all data is stored locally on your device:
+Your wallet data is on your device, not on our servers:
 
-- Uninstalling the app removes all wallet data
-- You can delete individual wallets within the app
-- No data remains on any external servers (we don't have any)
+- You can delete individual wallets in Settings, or remove all wallets with "Forgot password?" on the unlock screen
+- On Android, uninstalling the app removes its data
+- On iOS, data kept in the iOS Keychain can remain after the app is deleted and return if it is installed again. To remove everything, delete your wallets in the app before uninstalling it
+- We keep no wallet data on our servers
 
 ## International Users
 
@@ -112,9 +116,9 @@ We may update this Privacy Policy from time to time. Changes will be reflected i
 
 For questions or concerns about this Privacy Policy:
 
-- Email: tech@aetron.io
+- Email: support@aetron.io
 - Website: https://aetron.io
 
 ---
 
-**Summary:** AETRON Wallet is a non-custodial wallet that stores all data locally on your device. We do not collect, transmit, or have access to your personal information, private keys, or wallet data. We do not operate any servers and do not use any analytics or tracking services.
+**Summary:** AETRON Wallet is a non-custodial wallet that keeps your keys and wallet data on your device. It has no accounts, analytics, advertising or tracking. To work, it talks to AETRON's blockchain nodes, explorer and, when you connect a site, the end-to-end encrypted AETRON Connect relay; the desktop apps also check GitHub for updates.
